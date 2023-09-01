@@ -3,7 +3,8 @@ import Link from "next/link";
 
 const Navbar = () => {
   return (
-    <div className="flex flex-col justify-center items-center absolute bg-[brown] right-12 bottom-52 rounded-full h-60 w-14">
+    <div>
+    <div className="flex flex-col justify-center items-center absolute bg-[brown] right-12 bottom-60 rounded-full h-60 w-14 shadow-xl">
       <ul className="flex flex-col justify-between items-center gap-4">
         <li>
           <a href={NAV_ROUTES.Home}>
@@ -13,7 +14,7 @@ const Navbar = () => {
               viewBox="0 0 24 24"
               strokeWidth={1.5}
               stroke="currentColor"
-              className="w-[26px] h-[26px] hover:scale-150 duration-100"
+              className="navbar-icons"
             >
               <path
                 strokeLinecap="round"
@@ -31,7 +32,7 @@ const Navbar = () => {
               viewBox="0 0 24 24"
               strokeWidth={1.5}
               stroke="currentColor"
-              className="w-[26px] h-[26px] hover:scale-150 duration-100"
+              className="navbar-icons"
             >
               <path
                 strokeLinecap="round"
@@ -49,7 +50,7 @@ const Navbar = () => {
               viewBox="0 0 24 24"
               strokeWidth={1.5}
               stroke="currentColor"
-              className="w-[26px] h-[26px] hover:scale-150 duration-100"
+              className="navbar-icons"
             >
               <path
                 strokeLinecap="round"
@@ -67,7 +68,7 @@ const Navbar = () => {
               viewBox="0 0 24 24"
               strokeWidth={1.5}
               stroke="currentColor"
-              className="w-[26px] h-[26px] hover:scale-150 duration-100"
+              className="navbar-icons"
             >
               <path
                 strokeLinecap="round"
@@ -93,7 +94,7 @@ const Navbar = () => {
               viewBox="0 0 24 24"
               strokeWidth={1.5}
               stroke="currentColor"
-              className="w-[26px] h-[26px] hover:scale-150 duration-100"
+              className="navbar-icons"
             >
               <path
                 strokeLinecap="round"
@@ -104,6 +105,7 @@ const Navbar = () => {
           </a>
         </li>
       </ul>
+    </div>
     </div>
   );
 };
