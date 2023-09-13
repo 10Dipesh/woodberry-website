@@ -3,7 +3,7 @@ const HeroSection: React.FC = () => {
   return (
     <div className="flex gap-4 flex-col justify-center items-start md:flex-row border-b-2">
       <div className="flex gap-4 flex-col md:w-[50%] md:px-9 md:mt-24 md:gap-9">
-        <h1 className="text-3xl font-bold text-left px-4 md:text-4xl">
+        <h1 className="text-3xl font-bold text-left px-4 md:text-5xl">
           Transform Your Space With stunning Interior Designs
         </h1>
         <p className="text-left text-sm px-4 md:text-base md:pr-7">
@@ -18,7 +18,7 @@ const HeroSection: React.FC = () => {
           <button className="buttons">Contact</button>
         </div>
       </div>
-      <div className="md:flex-1 h-[500px]">
+      <div className="md:flex-1 h-[600px]">
         <img
           src="images/homepage4.jpg"
           alt="homepage"

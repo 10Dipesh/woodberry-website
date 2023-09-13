@@ -49,9 +49,9 @@ const MobileMenu: React.FC = () => {
 };
 const DesktopMenu: React.FC = () => {
   return (
-    <div className="h-16 w-[100%] flex items-center justify-between bg-[brown]">
-      <div className="ml-7">
-        <img src="/images/woodberry-logo1.png" alt="logo" className="h-24 w-32" />
+    <div className="h-28 w-[100%] flex items-center justify-between bg-[brown]">
+      <div className="ml-9">
+        <img src="/images/woodberry-logo.png" alt="logo" className="h-20 w-20" />
       </div>
       <div className="hidden md:flex gap-4 mr-7">
         {Object.entries(NAV_ROUTES).map(([key, value]) => (
@@ -67,8 +67,8 @@ const DesktopMenu: React.FC = () => {
 const Navbar = () => {
   return (
     <>
-      <MobileMenu />
-      <div className="hidden md:flex"><DesktopMenu/></div>
+      <div className="md:hidden flex"><MobileMenu /></div>
+      <div className="hidden md:flex md:shadow-2xl"><DesktopMenu/></div>
     </>
   );
 };
