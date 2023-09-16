@@ -1,4 +1,22 @@
-import Image from "next/image";
+import VerticalSlider from "./slider/VerticalSlider";
+import { IContent } from "./slider/VerticalSlider";
+const fristContent: IContent[] = [
+  {
+    image: "/images/img1 (1).jpg",
+  },
+  {
+    image: "/images/img1 (2).jpg",
+  },
+  {
+    image: "/images/img1 (3).jpg",
+  },
+  {
+    image: "/images/img1 (4).jpg",
+  },
+  {
+    image: "/images/img1 (5).jpg",
+  },
+];
 const HeroSection: React.FC = () => {
   return (
     <div className="flex gap-4 flex-col justify-center items-start md:flex-row border-b-2">
@@ -18,12 +36,11 @@ const HeroSection: React.FC = () => {
           <button className="buttons">Contact</button>
         </div>
       </div>
-      <div className="md:flex-1 h-[600px]">
-        <img
-          src="images/homepage4.jpg"
-          alt="homepage"
-          className="h-[300px] w-full md:h-full"
-        />
+      <div className="md:flex-1 max-h-[600px] overflow-hidden">
+        <div className="flex h-full gap-4">
+        <VerticalSlider content={fristContent} />
+        <VerticalSlider content={fristContent} rtl={true} />
+        </div>
       </div>
     </div>
   );
