@@ -39,7 +39,7 @@ const VerticalSlider: React.FC<IProps> = ({ content, rtl }) => {
             <img
               src={item.image}
               alt=""
-              className="h-full w-[200px] md:w-[340px] "
+              className="h-full w-[200px] md:w-[340px] object-fit"
             />
           </div>
         ))}

@@ -3,6 +3,5 @@ export const NAV_ROUTES = {
   About: "/about",
   Projects: "/projects",
   Services: "/services",
-  Carrer: "/carrer",
   Contact: "/contact",
 };

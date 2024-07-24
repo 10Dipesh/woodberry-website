@@ -4,7 +4,7 @@ interface Props {
 }
 const Layout: React.FC<Props> = ({ children }) => {
   return (
-    <div>
+    <div className="relative">
       <Navbar />
       {children}
     </div>
