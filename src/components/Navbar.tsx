@@ -68,7 +68,7 @@ const DesktopMenu: React.FC = () => {
               className="cursor-pointer"
             ></Image>
           </div>
-          <div className="hidden md:flex gap-6 text-lg">
+          <div className="hidden md:flex gap-6 text-[18px]">
             {Object.entries(NAV_ROUTES).map(([key, value]) => (
               <Link href={value} key={key}>
                 <div className="text-red">{key}</div>
