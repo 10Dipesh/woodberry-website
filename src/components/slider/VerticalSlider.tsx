@@ -33,7 +33,7 @@ const VerticalSlider: React.FC<IProps> = ({ content, rtl }) => {
 
   return (
     <div className="w-full h-full">
-      <div ref={ref} className="keen-slider h-[300px] md:h-[600px]">
+      <div ref={ref} className="keen-slider h-[300px] md:h-[600px] rounded-lg">
         {content.map((item, index) => (
           <div className="keen-slider__slide" key={index}>
             <img

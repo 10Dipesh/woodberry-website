@@ -1,7 +1,8 @@
+
 export const NAV_ROUTES = {
   Home: "/",
   About: "/about",
-  Projects: "/projects",
+  Gallery: "/gallery",
   Services: "/services",
   Contact: "/contact",
 };
